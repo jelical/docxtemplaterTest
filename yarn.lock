@@ -300,6 +300,20 @@
   resolved "https://registry.yarnpkg.com/@jsreport/mingo/-/mingo-2.4.1.tgz#019ff48079a3ffeff2a5d8f1380386b921a0fc81"
   integrity sha512-6ZXpnsXoLvXf8t1aGhJ3TamVdi3tHfDGlNs5qfaIQfIlUkga6x6juQD+9twO5NHn+PKKct/FQQBScOqC0SsrmA==
 
+"@jsreport/office@4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@jsreport/office/-/office-4.1.1.tgz#216264db50be950a4e5b1c58c2e684d187d30948"
+  integrity sha512-hUidRMCDqgFzbfcedVy7/g32nM172H6K3fx6mUgvPhY2SPepJN+6KDJomPnFyvR7lWrARxeWVWu++jcNsRLThQ==
+  dependencies:
+    archiver "7.0.1"
+    axios "1.6.7"
+    form-data "2.5.0"
+    get-stream "5.1.0"
+    node.extend.without.arrays "1.1.6"
+    pify "4.0.1"
+    yauzl "2.10.0"
+    zip "1.2.0"
+
 "@jsreport/office@4.1.2":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@jsreport/office/-/office-4.1.2.tgz#7824f7d25c482324ef14f8b220be04f58edd1e58"
@@ -438,6 +452,11 @@
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.6.tgz#8a1524eb5bd5e965c1e3735476f0262469f71440"
   integrity sha512-uRjjusqpoqfmRkTaNuLJ2VohVr67Q5YwDATW3VU7PfzTj6IRaihGrYI7zckGZjxQPBIp63nfvJbM+Yu5ICh0Bg==
 
+"@xmldom/xmldom@^0.8.7":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.10.tgz#a1337ca426aa61cef9fe15b5b28e340a72f6fa99"
+  integrity sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==
+
 abort-controller@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
@@ -473,6 +492,11 @@ ajv@6.12.6:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
+
+angular-expressions@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/angular-expressions/-/angular-expressions-1.4.0.tgz#3ef6007d67c1c688d10fe2bf525c9ba8877da2b9"
+  integrity sha512-LmbYpeZMuMhifpk+LmF2li9FzH2kYPwF/ykwHFKSnLrk8zJ8sZUjipcmGjJoHQTPcfj/YhkUoQYVbyZ08jDdYg==
 
 ansi-bgblack@^0.1.1:
   version "0.1.1"
@@ -838,6 +862,15 @@ autolinker@~0.28.0:
   integrity sha512-zQAFO1Dlsn69eXaO6+7YZc+v84aquQKbwpzCE3L0stj56ERn9hutFxPopViLjo9G+rWwjozRhgS5KJ25Xy19cQ==
   dependencies:
     gulp-header "^1.7.1"
+
+axios@1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.7.tgz#7b48c2e27c96f9c68a2f8f31e2ab19f59b06b0a7"
+  integrity sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==
+  dependencies:
+    follow-redirects "^1.15.4"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 axios@1.7.7:
   version "1.7.7"
@@ -1378,6 +1411,13 @@ diff@^4.0.1:
   resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
+docxtemplater@3.37.0:
+  version "3.37.0"
+  resolved "https://registry.yarnpkg.com/docxtemplater/-/docxtemplater-3.37.0.tgz#2a984bc5037c702add318fbffc55686a1740ccb9"
+  integrity sha512-yc4ebQBgRK6joLwwE0ORi/Mj3gMPIM9UA985nZCkSzB1CpzPeNL66yLwirkgPwaw19mlfRu61MurEm9eU7zRyQ==
+  dependencies:
+    "@xmldom/xmldom" "^0.8.7"
+
 dom-serializer@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-2.0.0.tgz#e41b802e1eedf9f6cae183ce5e622d789d7d8e53"
@@ -1625,7 +1665,7 @@ fn.name@1.x.x:
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
 
-follow-redirects@^1.15.6:
+follow-redirects@^1.15.4, follow-redirects@^1.15.6:
   version "1.15.9"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.9.tgz#a604fa10e443bf98ca94228d9eebcc2e8a2c8ee1"
   integrity sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==
@@ -2645,6 +2685,11 @@ package-json-from-dist@^1.0.0:
   resolved "https://registry.yarnpkg.com/package-json-from-dist/-/package-json-from-dist-1.0.1.tgz#4f1471a010827a86f94cfd9b0727e36d267de505"
   integrity sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==
 
+pako@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-2.1.0.tgz#266cc37f98c7d883545d11335c00fbd4062c9a86"
+  integrity sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
@@ -2716,6 +2761,13 @@ pify@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
+
+pizzip@3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/pizzip/-/pizzip-3.1.4.tgz#0c2578506ce5b487fa00bc2dd62eebeb291ee677"
+  integrity sha512-08yol1Of5Og1E0a1R56c+Z1jVkvfTEBUouwG9WYwCqpj8BjdcpEpLgZsrdLFNQYRgtxK0OOe0JpmBWJdrPr6Dg==
+  dependencies:
+    pako "^2.1.0"
 
 posix-character-classes@^0.1.0:
   version "0.1.1"

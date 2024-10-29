@@ -1,6 +1,7 @@
 import jsreportClass from '@jsreport/jsreport-core';
 import docx from '@jsreport/jsreport-docx';
 import handlebars from '@jsreport/jsreport-handlebars';
+import docxtemplater from "./extensions/jsreport-docxtemplater"
 import fs from "fs/promises";
 import path from "path";
 
@@ -18,6 +19,7 @@ const jsreport = jsreportClass({
 })
 jsreport.use(handlebars());
 jsreport.use(docx());
+jsreport.use(docxtemplater());
 (async ()=>{
     await jsreport.init();
     const helpersPath = path.resolve(__dirname,'helpers.tpl.js');
@@ -25,12 +27,14 @@ jsreport.use(docx());
     const templatePath = path.resolve(__dirname,'..', process.argv[2]);
     const content = await fs.readFile(templatePath);
     const pass = content.toString('base64');
+
     const result = await jsreport.render({
         template: {
             engine: 'handlebars',
-            recipe: 'docx',
+            recipe: 'docxtemplater',
             helpers,
-            docx:{
+            // @ts-ignore
+            docxtemplater:{
                 templateAsset: {
                     content: pass,
                     encoding: "base64"
