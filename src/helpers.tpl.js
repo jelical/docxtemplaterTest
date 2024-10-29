@@ -7,3 +7,7 @@ const helpers = require('handlebars-helpers')({
 handlebars.registerHelper({
     upper: (str)=> helpers.uppercase(str)
 })
+handlebars.registerHelper({
+    he: (input) => input === "Male" ? "he": input === "Female" ? "she": "they",
+    himself: (input) => input === "Male" ? "himself": input === "Female" ? "herself": "themself"
+})
