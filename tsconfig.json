@@ -1,12 +1,22 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
     "target": "ES6",
     "module": "commonjs",
     "strict": true,
+    "allowJs": false,
     "esModuleInterop": true,
-    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "lib": ["es2021", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "@jsreport/jsreport-core": ["./node_modules/@types/jsreport-core"],
+      "@jsreport/jsreport-docx": ["./node_modules/@types/jsreport-docx"],
+      "@jsreport/jsreport-chrome-pdf": ["./node_modules/@types/jsreport-chrome-pdf"],
+      "@jsreport/jsreport-handlebars": ["./node_modules/@types/jsreport-handlebars"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
